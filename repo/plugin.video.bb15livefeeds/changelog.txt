@@ -1,3 +1,12 @@
+[b]Version 1.0.4[/b]
+ - More fixes
+
+[b]Version 1.0.3[/b]
+ - More fixes
+ 
+[b]Version 1.0.2[/b]
+ - Fixed
+
 [b]Version 1.0.1[/b]
  - Added ALT links (mobile) since some have been having problems
  

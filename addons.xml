@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon
-  id="plugin.video.bbcalivefeeds"
+  id="plugin.video.bb15livefeeds"
   name="Big Brother 15 Live Feeds"
-  version="1.0.3"
+  version="1.0.4"
   provider-name="mikesplain">
   <requires>
    <import addon="xbmc.python" version="2.1.0"/>
