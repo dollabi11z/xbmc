@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="plugin.video.bbcalivefeeds"
-  name="Big Brother Canada Live Feeds"
+  name="Big Brother 15 Live Feeds"
   version="1.0.1"
   provider-name="liquid8d">
   <requires>
@@ -13,8 +13,8 @@
    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Big Brother Canada Live Streams</summary>
-    <description lang="en">Watch the live feeds for Big Brother Canada!</description>
+    <summary lang="en">Big Brother 15 Live Streams</summary>
+    <description lang="en">Watch the live feeds for Big Brother 15!</description>
     <platform>all</platform>
 	<email>liquid8d@gmail.com</email>
   </extension>

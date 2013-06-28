@@ -1,5 +1,16 @@
 import urllib,urllib2,re,xbmcplugin,xbmcgui
 
+
+# http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_1@107805/master.m3u8
+# http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_2@107805/master.m3u8
+# http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_3@107805/master.m3u8
+# http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_4@107805/master.m3u8
+# http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_5@107805/master.m3u8
+
+
+
+
+
 #http://xbigbrothercanada1x.api.channel.livestream.com/3.0/playlist.m3u8
 #http://xbigbrothercanada2x.api.channel.livestream.com/3.0/playlist.m3u8
 #http://xbigbrothercanada3x.api.channel.livestream.com/3.0/playlist.m3u8
@@ -41,15 +52,10 @@ def addLink(name,url,iconimage):
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
         return ok
 
-#addLink('Feeds', 'http://ichunk.livestream.com/212.54/livestreamiphone/bigbrothercanada4-secretlocationdev000020130304-182952-high_1756/playlist.m3u8?wowzasessionid=133706173', 'DefaultVideo.png')
-
-addLink('Camera1', 'http://xbigbrothercanada1x.api.channel.livestream.com/3.0/playlist.m3u8', 'DefaultVideo.png')
-addLink('Camera1 ALT', 'rtsp://mobilestr.livestream.com/livestreamiphone/bigbrothercanada1', 'DefaultVideo.png')
-addLink('Camera2', 'http://xbigbrothercanada2x.api.channel.livestream.com/3.0/playlist.m3u8', 'DefaultVideo.png')
-addLink('Camera2 ALT', 'rtsp://mobilestr.livestream.com/livestreamiphone/bigbrothercanada2', 'DefaultVideo.png')
-addLink('Camera3', 'http://xbigbrothercanada3x.api.channel.livestream.com/3.0/playlist.m3u8', 'DefaultVideo.png')
-addLink('Camera3 ALT', 'rtsp://mobilestr.livestream.com/livestreamiphone/bigbrothercanada3', 'DefaultVideo.png')
-addLink('Camera4', 'http://xbigbrothercanada4x.api.channel.livestream.com/3.0/playlist.m3u8', 'DefaultVideo.png')
-addLink('Camera4 ALT', 'rtsp://mobilestr.livestream.com/livestreamiphone/bigbrothercanada4', 'DefaultVideo.png')
+addLink('Camera1', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_1@107805/master.m3u8', 'DefaultVideo.png')
+addLink('Camera2', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_2@107805/master.m3u8', 'DefaultVideo.png')
+addLink('Camera3', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_3@107805/master.m3u8', 'DefaultVideo.png')
+addLink('Camera4', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_4@107805/master.m3u8', 'DefaultVideo.png')
+addLink('Split', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_5@107805/master.m3u8', 'DefaultVideo.png')
 
 xbmcplugin.endOfDirectory(int(sys.argv[1]))

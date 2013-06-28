@@ -1,8 +1,0 @@
-[b]Version 1.0.2[/b]
- - Updated links
-
- [b]Version 1.0.1[/b]
- - Updated link for High quality
-
-[b]Version 1.0.0[/b]
- - Initial version
