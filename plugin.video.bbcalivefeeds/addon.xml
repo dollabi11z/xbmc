@@ -2,8 +2,8 @@
 <addon
   id="plugin.video.bbcalivefeeds"
   name="Big Brother 15 Live Feeds"
-  version="1.0.1"
-  provider-name="liquid8d">
+  version="1.0.2"
+  provider-name="mikesplain">
   <requires>
    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -16,6 +16,6 @@
     <summary lang="en">Big Brother 15 Live Streams</summary>
     <description lang="en">Watch the live feeds for Big Brother 15!</description>
     <platform>all</platform>
-	<email>liquid8d@gmail.com</email>
+	<email>mike.splain@gmail.com</email>
   </extension>
 </addon>
