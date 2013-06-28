@@ -3,7 +3,7 @@
 <addon
   id="plugin.video.bbcalivefeeds"
   name="Big Brother 15 Live Feeds"
-  version="1.0.2"
+  version="1.0.3"
   provider-name="mikesplain">
   <requires>
    <import addon="xbmc.python" version="2.1.0"/>
