@@ -1,4 +1,4 @@
-import urllib,urllib2,re,xbmcplugin,xbmcgui
+import urllib,urllib2,re,xbmcplugin,xbmcgui,datetime
 
 
 # http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_1@107805/master.m3u8
@@ -52,10 +52,13 @@ def addLink(name,url,iconimage):
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
         return ok
 
-addLink('Camera1', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_1@107805/master.m3u8', 'DefaultVideo.png')
-addLink('Camera2', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_2@107805/master.m3u8', 'DefaultVideo.png')
-addLink('Camera3', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_3@107805/master.m3u8', 'DefaultVideo.png')
-addLink('Camera4', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_4@107805/master.m3u8', 'DefaultVideo.png')
-addLink('Split', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE062713x05C4_5@107805/master.m3u8', 'DefaultVideo.png')
+now = datetime.datetime.now()
+date = now.strftime("%m%d%y")
+
+addLink('Camera1', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE'+date+'x05C4_1@107805/master.m3u8', 'DefaultVideo.png')
+addLink('Camera2', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE'+date+'x05C4_2@107805/master.m3u8', 'DefaultVideo.png')
+addLink('Camera3', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE'+date+'x05C4_3@107805/master.m3u8', 'DefaultVideo.png')
+addLink('Camera4', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE'+date+'x05C4_4@107805/master.m3u8', 'DefaultVideo.png')
+addLink('Split', 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE'+date+'x05C4_5@107805/master.m3u8', 'DefaultVideo.png')
 
 xbmcplugin.endOfDirectory(int(sys.argv[1]))

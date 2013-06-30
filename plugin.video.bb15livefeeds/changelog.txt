@@ -1,3 +1,6 @@
+[b]Version 1.0.5[/b]
+ - This should do it!
+
 [b]Version 1.0.4[/b]
  - More fixes
 
